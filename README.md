@@ -1,4 +1,4 @@
-# CAN-Dataset-Generator
+# CAN Dataset Generator
 
 If you use this software, please cite our paper using the following format:
 TODO
