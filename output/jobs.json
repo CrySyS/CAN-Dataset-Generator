@@ -1,0 +1,116 @@
+[
+    {
+        "original-name": "S-1-1-orig",
+        "new-name": "S-1-1",
+        "description": "Driving with about constant 36 km/h speed.",
+        "attacks": {
+            "message_injection": [
+                {
+                    "type": "CONST",
+                    "start": 0.4,
+                    "end": 0.6,
+                    "id": "0x410",
+                    "start_bit": 1,
+                    "end_bit": 3,
+                    "attack_inter_message_time": 0.025,
+                    "output": "output/S-1-1/",
+                    "benign_file_full_path": "output/S-1-1/S-1-1-benign.log",
+                    "benign_file": "S-1-1-benign.log",
+                    "filename": "S-1-1-malicious-CONST-msg-inj-0x410-0.4-0.6",
+                    "filename_log": "output/S-1-1/S-1-1-malicious-CONST-msg-inj-0x410-0.4-0.6.log",
+                    "filename_json": "output/S-1-1/S-1-1-malicious-CONST-msg-inj-0x410-0.4-0.6.json",
+                    "description": "Driving with about constant 36 km/h speed. Trace is modified with a message injection attack. Starting at 40% of the trace and ending at 60% of the trace."
+                }
+            ],
+            "message_modification": [
+                {
+                    "type": "CONST",
+                    "start": 0.4,
+                    "end": 0.6,
+                    "id": "0x410",
+                    "start_bit": 1,
+                    "end_bit": 3,
+                    "output": "output/S-1-1/",
+                    "benign_file_full_path": "output/S-1-1/S-1-1-benign.log",
+                    "benign_file": "S-1-1-benign.log",
+                    "filename": "S-1-1-malicious-CONST-msg-mod-0x410-0.4-0.6",
+                    "filename_log": "output/S-1-1/S-1-1-malicious-CONST-msg-mod-0x410-0.4-0.6.log",
+                    "filename_json": "output/S-1-1/S-1-1-malicious-CONST-msg-mod-0x410-0.4-0.6.json",
+                    "description": "Driving with about constant 36 km/h speed. Trace is modified with a message modification attack. Starting at 40% of the trace and ending at 60% of the trace."
+                }
+            ],
+            "double_message_injection": [
+                {
+                    "targets": [
+                        {
+                            "type": "CONST",
+                            "start": 0.4,
+                            "end": 0.6,
+                            "id": "0x110",
+                            "start_bit": 1,
+                            "end_bit": 3,
+                            "attack_inter_message_time": 0.0025,
+                            "filename": "S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6",
+                            "filename_log": "output/S-1-1/S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.log",
+                            "output": "output/S-1-1/",
+                            "benign_file_full_path": "output/S-1-1/S-1-1-benign.log",
+                            "benign_file": "S-1-1-benign.log"
+                        },
+                        {
+                            "type": "CONST",
+                            "start": 0.4,
+                            "end": 0.6,
+                            "id": "0x410",
+                            "start_bit": 1,
+                            "end_bit": 3,
+                            "attack_inter_message_time": 0.025,
+                            "filename": "S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6",
+                            "filename_log": "output/S-1-1/S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.log",
+                            "output": "output/S-1-1/",
+                            "benign_file_full_path": "output/S-1-1/S-1-1-benign.log",
+                            "benign_file": "S-1-1-benign.log"
+                        }
+                    ],
+                    "output": "output/S-1-1/",
+                    "benign_file_full_path": "output/S-1-1/S-1-1-benign.log",
+                    "benign_file": "S-1-1-benign.log",
+                    "filename": "S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6",
+                    "filename_log": "output/S-1-1/S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.log",
+                    "filename_json": "output/S-1-1/S-1-1-malicious-DOUBLE-msg-inj-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.json",
+                    "description": "Driving with about constant 36 km/h speed. Trace is modified with two message injection attack simultaneously. Starting at 40% of the trace and ending at 60% of the trace."
+                }
+            ],
+            "double_message_modification": [
+                {
+                    "targets": [
+                        {
+                            "type": "CONST",
+                            "start": 0.4,
+                            "end": 0.6,
+                            "id": "0x110",
+                            "start_bit": 1,
+                            "end_bit": 3
+                        },
+                        {
+                            "type": "CONST",
+                            "start": 0.4,
+                            "end": 0.6,
+                            "id": "0x410",
+                            "start_bit": 1,
+                            "end_bit": 3
+                        }
+                    ],
+                    "output": "output/S-1-1/",
+                    "benign_file_full_path": "output/S-1-1/S-1-1-benign.log",
+                    "benign_file": "S-1-1-benign.log",
+                    "filename": "S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6",
+                    "filename_log": "output/S-1-1/S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.log",
+                    "filename_json": "output/S-1-1/S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.json",
+                    "description": "Driving with about constant 36 km/h speed. Trace is modified with two message modification attack simultaneously. Starting at 40% of the trace and ending at 60% of the trace."
+                }
+            ]
+        },
+        "benign_file": "S-1-1-benign",
+        "output": "output/S-1-1/"
+    }
+]

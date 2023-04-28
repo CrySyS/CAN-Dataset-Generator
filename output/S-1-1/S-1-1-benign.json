@@ -1,0 +1,28 @@
+{
+    "id": "S-1-1",
+    "label": "benign",
+    "capture": {
+        "datetime": "2021-04-15",
+        "details": "Trace length: 30.08231 sec.",
+        "related_files": [
+            {
+                "device": "Engine control ECU",
+                "file_path": "S-1-1-benign-speedAndRevolutionSignal.pdf",
+                "description": "Plot of the engine revolution and speed signals of the vehicle."
+            }
+        ]
+    },
+    "participating_devices": [
+        {
+            "name": "Various ECUs sending CAN messages",
+            "id": "0x110, 0x120, 0x140, 0x180, 0x1a0, 0x280, 0x290, 0x295, 0x300, 0x301, 0x380, 0x381, 0x383, 0x410, 0x440, 0x4a0, 0x510, 0x531"
+        }
+    ],
+    "description": "Driving with about constant 36 km/h speed.",
+    "capture_file": {
+        "file_name": "S-1-1-benign.log",
+        "file_size": 693,
+        "file_hash": "748b1edd5144d88b11048c6963f6de440a8f881eba975273f34a13d4daa00c6d"
+    },
+    "markers": []
+}

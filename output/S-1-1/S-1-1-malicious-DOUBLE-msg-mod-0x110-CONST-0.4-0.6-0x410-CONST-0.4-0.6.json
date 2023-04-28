@@ -1,0 +1,39 @@
+{
+    "id": "S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6",
+    "label": "malicious",
+    "capture": {
+        "datetime": "2021-04-15",
+        "details": "Trace length: 30.08231 sec.",
+        "related_files": [
+            {
+                "device": "Engine control ECU",
+                "file_path": "S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6-speedAndRevolutionSignal.pdf",
+                "description": "Plot of the engine revolution and speed signals of the vehicle."
+            }
+        ]
+    },
+    "participating_devices": [
+        {
+            "name": "Various ECUs sending CAN messages",
+            "id": "0x110, 0x120, 0x140, 0x180, 0x1a0, 0x280, 0x290, 0x295, 0x300, 0x301, 0x380, 0x381, 0x383, 0x410, 0x440, 0x4a0, 0x510, 0x531"
+        }
+    ],
+    "description": "Driving with about constant 36 km/h speed. Trace is modified with two message modification attack simultaneously. Starting at 40% of the trace and ending at 60% of the trace.",
+    "capture_file": {
+        "file_name": "S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.log",
+        "file_size": 888,
+        "file_hash": "370cdcef866f9172ff6b314f8c5579488826d1e9d654f5d91b21582b4c6b045f"
+    },
+    "markers": [
+        {
+            "packet_ID": "0x410",
+            "time": 12.091016,
+            "description": "Start of the attack."
+        },
+        {
+            "packet_ID": "0x410",
+            "time": 17.991966,
+            "description": "End of the attack."
+        }
+    ]
+}

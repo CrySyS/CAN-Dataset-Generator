@@ -1,0 +1,79 @@
+{
+    "general_attacks": {
+        "message_injection": [
+            {
+                "type": "CONST",
+                "start": 0.4,
+                "end": 0.6,
+                "id": "0x410",
+                "start_bit": 1,
+                "end_bit": 3,
+                "attack_inter_message_time": 0.025
+            }
+        ],
+        "message_modification": [
+            {
+                "type": "CONST",
+                "start": 0.4,
+                "end": 0.6,
+                "id": "0x410",
+                "start_bit": 1,
+                "end_bit": 3
+            }
+        ],
+        "double_message_injection": [
+            {
+                "targets": [
+                    {
+                        "type": "CONST",
+                        "start": 0.4,
+                        "end": 0.6,
+                        "id": "0x110",
+                        "start_bit": 1,
+                        "end_bit": 3,
+                        "attack_inter_message_time": 0.0025
+                    },
+                    {
+                        "type": "CONST",
+                        "start": 0.4,
+                        "end": 0.6,
+                        "id": "0x410",
+                        "start_bit": 1,
+                        "end_bit": 3,
+                        "attack_inter_message_time": 0.025
+                    }
+                ]
+            }
+        ],
+        "double_message_modification": [
+            {
+                "targets": [
+                    {
+                        "type": "CONST",
+                        "start": 0.4,
+                        "end": 0.6,
+                        "id": "0x110",
+                        "start_bit": 1,
+                        "end_bit": 3
+                    },
+                    {
+                        "type": "CONST",
+                        "start": 0.4,
+                        "end": 0.6,
+                        "id": "0x410",
+                        "start_bit": 1,
+                        "end_bit": 3
+                    }
+                ]
+            }
+        ]
+    },
+    "convert_jobs": [
+        {
+            "original-name": "S-1-1-orig",
+            "new-name": "S-1-1",
+            "description": "Driving with about constant 36 km/h speed.",
+            "attacks": {}
+        }
+    ]
+}

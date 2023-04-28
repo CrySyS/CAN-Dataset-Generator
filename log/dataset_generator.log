@@ -1,0 +1,6 @@
+2023-04-28 15:09:34,636 - INFO - Dataset generator started & config loaded!
+2023-04-28 15:09:34,638 - INFO - Running message modification attacks in single process mode
+2023-04-28 15:09:34,638 - INFO - Processing trace: S-1-1-orig (S-1-1)
+2023-04-28 15:09:35,896 - INFO - Infecting trace S-1-1 with message modification attack. Creating: S-1-1-malicious-CONST-msg-mod-0x410-0.4-0.6
+2023-04-28 15:09:37,183 - INFO - Infecting trace S-1-1 with double message modification attack. Creating: S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6
+2023-04-28 15:09:38,932 - INFO - Data generation completed.

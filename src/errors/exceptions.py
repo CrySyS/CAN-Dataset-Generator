@@ -1,0 +1,3 @@
+
+class LengthException(Exception):
+    pass

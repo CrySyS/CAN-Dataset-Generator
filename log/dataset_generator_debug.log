@@ -1,0 +1,25 @@
+2023-04-28 15:09:34,636 - INFO - Dataset generator started & config loaded!
+2023-04-28 15:09:34,637 - DEBUG - Input folder set: input/ && Output folder set: output/
+2023-04-28 15:09:34,637 - DEBUG - Loading convert jobs...
+2023-04-28 15:09:34,638 - INFO - Running message modification attacks in single process mode
+2023-04-28 15:09:34,638 - INFO - Processing trace: S-1-1-orig (S-1-1)
+2023-04-28 15:09:34,772 - DEBUG - TraceManager: length of the trace is: 30.08231
+2023-04-28 15:09:34,777 - DEBUG - Processing benign file: output/S-1-1/S-1-1-benign.log
+2023-04-28 15:09:35,854 - DEBUG - Calculating statistics!
+2023-04-28 15:09:35,896 - DEBUG - Starting infection sequence...
+2023-04-28 15:09:35,896 - INFO - Infecting trace S-1-1 with message modification attack. Creating: S-1-1-malicious-CONST-msg-mod-0x410-0.4-0.6
+2023-04-28 15:09:35,896 - DEBUG - Creating: output/S-1-1/S-1-1-malicious-CONST-msg-mod-0x410-0.4-0.6.log
+2023-04-28 15:09:36,307 - DEBUG - Modifying message data to this malicious value: 37.89
+2023-04-28 15:09:36,311 - DEBUG - First attack time: 12.091016
+2023-04-28 15:09:36,311 - DEBUG - Last attack time: 17.991966
+2023-04-28 15:09:37,118 - DEBUG - Calculating statistics!
+2023-04-28 15:09:37,183 - INFO - Infecting trace S-1-1 with double message modification attack. Creating: S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6
+2023-04-28 15:09:37,183 - DEBUG - Creating: output/S-1-1/S-1-1-malicious-DOUBLE-msg-mod-0x110-CONST-0.4-0.6-0x410-CONST-0.4-0.6.log
+2023-04-28 15:09:37,582 - DEBUG - Modifying message data to this malicious value: 89.49
+2023-04-28 15:09:37,587 - DEBUG - First attack time: 12.040882
+2023-04-28 15:09:37,587 - DEBUG - Last attack time: 18.041909
+2023-04-28 15:09:38,084 - DEBUG - Modifying message data to this malicious value: 37.89
+2023-04-28 15:09:38,089 - DEBUG - First attack time: 12.091016
+2023-04-28 15:09:38,089 - DEBUG - Last attack time: 17.991966
+2023-04-28 15:09:38,855 - DEBUG - Calculating statistics!
+2023-04-28 15:09:38,932 - INFO - Data generation completed.
