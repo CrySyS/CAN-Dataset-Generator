@@ -2,9 +2,12 @@
 
 This is the code used to generate the dataset presented in: [CrySyS dataset of CAN traffic logs containing fabrication and masquerade attacks](https://www.nature.com/articles/s41597-023-02716-9)
 
+A short description of the dataset can be read in [our blog post](https://blog.crysys.hu/2024/04/crysys-dataset-of-can-traffic-logs-containing-fabrication-and-masquerade-attacks/).
+
 If you use this software, please cite our paper using the following format:
 
-Gazdag, A., Ferenc, R. & Buttyán, L. CrySyS dataset of CAN traffic logs containing fabrication and masquerade attacks. Sci Data 10, 903 (2023). https://doi.org/10.1038/s41597-023-02716-9
+`Gazdag, A., Ferenc, R. & Buttyán, L. CrySyS dataset of CAN traffic logs containing fabrication and masquerade attacks. Sci Data 10, 903 (2023). https://doi.org/10.1038/s41597-023-02716-9`
+
 
 
 ## Execution of the code
